@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo清单应用</title>
+    <script src="node_modules/store.js/store.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/base.js"></script>
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <div class="container"><!--总容器开始-->
+       <h1>我的todo</h1>
+       <form class="add-task">
+           <input type="text" placeholder="请填写你要填写的项目" name="content">
+           <button type="submit">submit</button>
+       </form>
+       <div class="task-list"><!--列表开始-->
+       </div><!--列表结束-->
+       <div class="task-detail"><!--任务详情开始-->
+           <div class="content"><!--任务标题开始-->
+               下午记得买菜
+           </div><!--任务标题结束-->
+           <div><!--任务描述开始-->
+               <div class="desc">
+                   <textarea name="" ></textarea>
+               </div>
+               <div class="remind"><!--任务定时提醒开始-->
+                   <input type="text">
+                   <!--&lt;!&ndash;<button type="submit">submit</button>&ndash;&gt;只有用户添加日期的时候才显示-->
+               </div><!--任务定时提醒结束-->
+           </div><!--任务描述结束-->
+       </div><!--任务详情结束-->
+       <div class="task-detail-mask"></div>
+   </div><!--总容器结束-->
+   <script>
+
+   </script>
+</body>
+</html>
